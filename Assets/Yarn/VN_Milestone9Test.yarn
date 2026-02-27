@@ -1,0 +1,21 @@
+﻿title: M9_Test_A
+---
+Mina: Hey. This is Mina speaking first.
+Bot: And I'm Bot. I should now replace Mina's portrait.
+
+This line has no speaker, so the portrait should hide.
+
+Mina: Back again. Portrait should re-appear as Mina.
+
+<<jump M9_Test_B>>
+===
+
+title: M9_Test_B
+---
+Bot: New node, and Bot speaks first here. Portrait should show Bot immediately.
+Mina: Then Mina speaks again. Portrait should switch.
+
+This line has no speaker again. Portrait should hide.
+
+<<jump Start>>
+===

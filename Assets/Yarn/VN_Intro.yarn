@@ -8,6 +8,8 @@ Welcome to the intro (no speaker line to test hide).
     <<jump Forest>>
 -> Go to Bedroom
     <<jump Bedroom>>
+-> Go to Milestone 9 Scene instead?
+    <<jump M9_Test_A>>
 ===
 
 title: Forest

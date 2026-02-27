@@ -19,3 +19,7 @@ MonoBehaviour:
     background: {fileID: 21300000, guid: dc9fe01bfa4df66408cbac7390f3b5b5, type: 3}
   - nodeName: Bedroom
     background: {fileID: 21300000, guid: dec4bf38904c9e14b8c6f588dc823fc6, type: 3}
+  - nodeName: M9_Test_A
+    background: {fileID: 21300000, guid: 9736433534caffc40b1761b1b270323c, type: 3}
+  - nodeName: M9_Test_B
+    background: {fileID: 21300000, guid: 9736433534caffc40b1761b1b270323c, type: 3}
