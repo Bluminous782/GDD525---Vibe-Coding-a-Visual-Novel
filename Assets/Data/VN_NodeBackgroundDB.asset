@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7672954dbe6e8ec4eaaacdb249a5eff5, type: 3}
+  m_Name: VN_NodeBackgroundDB
+  m_EditorClassIdentifier: 
+  entries:
+  - nodeName: Start
+    background: {fileID: 21300000, guid: cba79bcfd1459894f93a618de62b79a6, type: 3}
+  - nodeName: Forest
+    background: {fileID: 21300000, guid: dc9fe01bfa4df66408cbac7390f3b5b5, type: 3}
+  - nodeName: Bedroom
+    background: {fileID: 21300000, guid: dec4bf38904c9e14b8c6f588dc823fc6, type: 3}

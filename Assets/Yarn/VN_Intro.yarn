@@ -1,0 +1,22 @@
+﻿title: Start
+---
+Welcome to the intro.
+-> Go to Forest
+    <<jump Forest>>
+-> Go to Bedroom
+    <<jump Bedroom>>
+===
+
+title: Forest
+---
+You are in the forest.
+-> Back to Start
+    <<jump Start>>
+===
+
+title: Bedroom
+---
+You are in a bedroom.
+-> Back to Start
+    <<jump Start>>
+===
