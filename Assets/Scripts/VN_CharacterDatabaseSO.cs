@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "VN/Character Database", fileName = "VN_CharacterDatabase")]
+[CreateAssetMenu(menuName = "VN/Characters/Character Database", fileName = "VN_CharacterDatabase")]
 public class VN_CharacterDatabaseSO : ScriptableObject
 {
     [SerializeField] private List<VN_CharacterDefinitionSO> characters = new();
@@ -18,6 +18,12 @@ public class VN_CharacterDatabaseSO : ScriptableObject
 
         _lookup.TryGetValue(id.Trim(), out var def);
         return def;
+    }
+
+    public bool TryGetById(string id, out VN_CharacterDefinitionSO def)
+    {
+        def = GetById(id);
+        return def != null;
     }
 
     private void BuildLookupIfNeeded()
@@ -43,4 +49,12 @@ public class VN_CharacterDatabaseSO : ScriptableObject
             _lookup.Add(key, def);
         }
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        // If you edit the list in the inspector, rebuild next time.
+        _lookup = null;
+    }
+#endif
 }

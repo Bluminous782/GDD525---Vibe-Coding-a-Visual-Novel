@@ -1,6 +1,9 @@
 ﻿title: Start
 ---
-Welcome to the intro.
+CHAR_A: Welcome to the intro.
+CHAR_B: Where do you want to go?
+
+Welcome to the intro (no speaker line to test hide).
 -> Go to Forest
     <<jump Forest>>
 -> Go to Bedroom
@@ -9,14 +12,16 @@ Welcome to the intro.
 
 title: Forest
 ---
-You are in the forest.
+CHAR_A: You are in the forest.
+CHAR_B: It’s quiet here.
 -> Back to Start
     <<jump Start>>
 ===
 
 title: Bedroom
 ---
-You are in a bedroom.
+CHAR_A: You are in a bedroom.
+CHAR_B: This place feels familiar.
 -> Back to Start
     <<jump Start>>
 ===

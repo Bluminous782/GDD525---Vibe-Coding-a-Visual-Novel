@@ -16,4 +16,5 @@ public class VN_CharacterDefinitionSO : ScriptableObject
 
     [Tooltip("True = render on the right side of the screen by default.")]
     public bool defaultScreenRight = true;
+
 }
