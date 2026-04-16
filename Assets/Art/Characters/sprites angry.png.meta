@@ -202,7 +202,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprites angry_0: 5242080062028359115
+      sprites angry_1: 1104914482688437679
+      sprites angry_2: 8556516414057411208
+      sprites angry_3: 635591701901396935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

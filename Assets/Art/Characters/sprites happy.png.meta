@@ -202,7 +202,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprites happy_0: 4896380307953567204
+      sprites happy_1: 5780552547162140007
+      sprites happy_2: 1635868484372007858
+      sprites happy_3: -4006373862683856107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
