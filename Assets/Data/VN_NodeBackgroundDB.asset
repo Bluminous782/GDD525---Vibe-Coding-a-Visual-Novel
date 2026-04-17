@@ -25,3 +25,5 @@ MonoBehaviour:
     background: {fileID: 21300000, guid: 9736433534caffc40b1761b1b270323c, type: 3}
   - nodeName: Enter
     background: {fileID: 21300000, guid: de2da611a1688ba4db19f2ffc576d855, type: 3}
+  - nodeName: Hideout
+    background: {fileID: -4382263810883811731, guid: 1a7ddf90e4f426441b3eaf2dd041a387, type: 3}
