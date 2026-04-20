@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1a7ddf90e4f426441b3eaf2dd041a387
+guid: 23cd1b183e812d54bb143313f56fb791
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4382263810883811731
-    second: jou-wang-jou_0
+      213: -6557791721017747862
+    second: george-sokol-georgesokol-skirmish-6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jou-wang-jou_0
+      name: george-sokol-georgesokol-skirmish-6_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1920
-        height: 1027
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d66883048421f23c0800000000000000
-      internalID: -4382263810883811731
+      spriteID: a665db5ac2b0ef4a0800000000000000
+      internalID: -6557791721017747862
       vertices: []
       indices: 
       edges: []
@@ -156,8 +156,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      jou-wang-jou_0: -4382263810883811731
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
