@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      george-sokol-georgesokol-skirmish-6_0: -6557791721017747862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
