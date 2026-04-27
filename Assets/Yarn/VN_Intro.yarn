@@ -16,6 +16,14 @@ The building is noticeable when you get close to it, however, it is not from a d
 
 Outside of the building stands some guards keeping watch, with two keeping lookout from the entrance.
 
+Milo: Ready to go Champ?
+
+You: Yep. 
+
+Milo: Nice. 
+
+Milo: It's go time.
+
 You notice a lone guard standing on a different side of the pyramid in the direction your facing, keeping watch of a certain area.
 
 You notice the ID card on his waist.
@@ -37,7 +45,9 @@ You notice the ID card on his waist.
 title: avoid
 ---
 
-You avoid the guard, not picking up the ID Card. Do you even need it?
+You don't pick up the ID Card whilst avoiding the guard.
+
+Milo: Hey, just letting you know, the next guard you see, you need to pick it up
 
 <<jump second_mission>>
 
