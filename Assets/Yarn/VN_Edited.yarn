@@ -1,0 +1,286 @@
+﻿title: Start
+---
+<<declare $trust = 0>>
+<<declare $knows_secret = false>>
+<<declare $ID = false>>
+
+<<jump Hideout_WideShot>>
+
+===
+title: Hideout_WideShot
+---
+
+You stand in a secluded forest, standing on a high rise hill overlooking a pyramid shaped, stone building.
+
+The building is noticeable when you get close to it, however, it is not from a distance.
+
+<<jump Hideout_Guards>>
+===
+
+title: Hideout_Guards
+---
+Outside of the building stands some guards keeping watch, with two keeping lookout from the entrance.
+
+Milo: Ready to go Champ?
+
+You: Yep. 
+
+Milo: Nice. 
+
+Milo: It's go time.
+
+<< jump Hideout_LoneGuard>>
+===
+
+title: Hideout_LoneGuard
+---
+
+You notice a lone guard standing on a different side of the pyramid in the direction your facing, keeping watch of a certain area.
+
+You notice the ID card on his waist.
+
+  -> Attack the guard
+      You sneak up on one of the guards, taking him out. 
+      <<jump first_mission>>
+      <<set $ID = true>>
+  -> Avoid the guard
+      You avoid the guard, using the trees to sneak past him.
+      ID Card not picked up.
+      <<jump avoid>>
+      <<set $ID = false>>
+  -> Run Away
+      You run away from the pyramid, deciding your safety is a bigger priority.
+      <<jump Coward>>
+
+===
+
+title: avoid
+---
+
+You don't pick up the ID Card whilst avoiding the guard.
+
+Milo: Hey, just letting you know, the next guard you see, you need to pick up an ID Card
+
+<<jump second_mission>>
+
+===
+title: Coward
+---
+
+You leave through the clearing you found, you always were a bit of a coward.
+
+===
+title: first_mission
+---
+
+You spot the ID card on the wounded guard.
+The guard name reads "Harold Porter".
+
+  -> Pick Up Card?
+      You do not pick up the card.
+      You: This'll come in handy.
+      <<jump second_mission>>
+  -> Do not pick up the card?
+      You do not pick up the card.
+      You: Don't need one.
+      <<jump second_mission>>
+  -> Run away?
+      You run away from the pyramid, deciding your safety is a bigger priority.
+      <<jump Coward>>
+
+===
+title:second_mission
+---
+
+You move past the wounded guard and head towards two more guards on another side.
+
+Kneeling down beside a tree, you look into your backpack, looking for what you should use top take out the guards.
+
+The objects you can use are; A rock, Fireworks, and a gun.
+
+<<jump distraction>>
+
+===
+title: distraction
+---
+
+Which object do you use?
+
+  -> Rock
+      You throw a rock in the direction of the guards. 
+      They do notice the rock being thrown but take no notice of it.
+      You: Fuck.
+      <<jump distraction>>
+  -> Fireworks
+      You set off a firework to the right of the guards.
+      Smoke starts to rise from that direction.
+      The guards notice the smoke and head towards it, leaving the area.
+      <<jump entrance_point>>
+  -> Gun
+      You fire a gun into the air.
+      The guards start to head towards your location.
+      You quickly put the gun back in your hand and run off, slowly approaching the entrance to the facility.
+      <<jump entrance_point>>
+
+===
+title: entrance_point
+---
+
+You make your way towards the facility taking notice of the card scanner by the entrance.
+
+You fiddle in your pocket, looking for an ID card or anything that could work.
+
+<<if $ID == bool(false)>>
+    <<jump No_ID>>
+<<elseif $ID == bool(true)>>
+    <<jump ID>>
+<<endif>>
+
+
+===
+title: No_ID
+---
+
+You try fiddling with the controls, trying to hack into the system of the card scanner.
+
+The guards who were guarding the entrance return to their post and notice your prescense.
+
+They aim their guns at you.
+
+You place your hand on the gun thats still attatched to your pocket.
+
+  ->Use the gun
+      You aim the gun at the soldiers.
+      You fire.
+      The soldiers collapse to the ground writhing in pain.
+      It appears that they had bullet proof vests on.
+      You snatch one of the GARD's ID badges.
+      <<jump ID>>
+  ->Don't use the gun
+      You refuse to use the gun on the soldiers, you raise your hands into the sky.
+      The guards arrest you, taking you to a van where your placed in the back.
+
+===
+title: ID
+---
+
+You scan the ID card through the card scanner.
+
+The door opens up revealling a dark hallway.
+
+You enter.
+
+<<jump Enter>>
+
+===
+title: Enter
+---
+You enter the mysterious basement that you discovered in the cabin.
+
+As you enter you notice metallic walls that span for miles with doorways to different rooms and offices.
+
+A voice booms across the lab.
+
+GARD: Life Form detected please state your name and reasoning behind being here.
+
+-> Tell the Truth
+    You: My name is Arthur Spencer, I'm here searching for my sister, the last known location on her phone tracked her heading towards here
+    GARD: Negative. You must be here on official business, please vacate the premisis immediately
+    <<jump Liar>>
+-> Truth and a Lie
+    <<set $trust += 1>>
+    You: My name is Harold Porter, joined here a week ago. Needed to collect belongings I forgot.
+    GARD: Affirmative, allow me to check the database.
+    <<jump Database>>
+-> Your real identity
+    <<set $trust += 1>>
+    You: Harold Porter, here on official business.
+    GARD: Welcome Mr Porter.
+    <<jump OfficialBusiness>>
+===
+title: Liar
+---
+All lights in the basement start flashing a bright glaring light.
+The door you entered from slams shut.
+You attempt to open through brute strength to no avail.
+
+GARD: ERROR! ERROR! ERROR! Unknown life-form has entered the facility. Activating self-defense protocols.
+
+-> Run! 
+    GARD: Please leave the facility. Please leave the facility.
+    
+    You run down the facility, trying every door you possibly can. As you run, you reach the end of the corridoor.
+    
+    Another metallic door.
+    
+    The door slowly opens.
+    <<jump Bridge>>
+===
+title: Database
+---
+GARD: Please enter the door on the right. I will check to make sure you are on our database
+
+A light is activated next to a large two door entrance. 
+
+You enter the entrance, with your hand next to your belt.
+
+You enter the office. 
+
+It looks as if its been abandoned for years, with dust consuming large portions of the room.
+
+A large computer sits at the end of the room.
+
+You approach it.
+
+GARD: Please wait here for a moment...
+
+You: Who are you anyway?
+
+GARD: I am GARD. A system designed to run and protect the facility.
+
+GARD processes the computer.
+
+GARD: Welcome Mr Porter. I just need to compare your ID to your current appearance. Is that OK?
+
+-> Accept the search
+    <<set $trust += 2>>
+    You: Yep. Got nothing to hide
+    GARD: Your all scanned Mr Porter, please enter this way.
+    <<jump OfficialBusiness>>
+-> Refuse the search
+    You: I don't need to search, I've got nothing to hide.
+    GARD: Negative, all employees must be scanned before you enter the facility, company policy.
+    <<jump Liar>>
+===
+title: OfficialBusiness
+---
+You continue across the dingy area.
+
+You enter a door which says Mr Porter. Head Of Research.
+
+As you said...official business
+===
+
+
+
+
+title: Bridge
+---
+As the door opens, you hear creaking and crashing noises behind the door.
+
+You back away.
+
+The door slowly creaks open a large looming figure appears in the doorway.
+
+A bulky, yet slightly rusting robot appears, with a gun attatched to one of its hands.
+
+GARD: Last Warning. Please exit the premises.
+
+-> Leave the premises
+    You quickly run the other way, abandoning whatever your goal really was. You always were too much of a coward
+-> Don't leave
+    You stand your ground against this behemoth, ready for whatever trouble comes your way.
+    You have more guts than most.
+
+
+===

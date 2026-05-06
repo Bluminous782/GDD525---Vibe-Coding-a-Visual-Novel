@@ -25,9 +25,13 @@ MonoBehaviour:
     background: {fileID: 21300000, guid: 9736433534caffc40b1761b1b270323c, type: 3}
   - nodeName: Enter
     background: {fileID: -6557791721017747862, guid: 23cd1b183e812d54bb143313f56fb791, type: 3}
-  - nodeName: Hideout
+  - nodeName: Hideout_WideShot
     background: {fileID: -4382263810883811731, guid: 1a7ddf90e4f426441b3eaf2dd041a387, type: 3}
   - nodeName: second_mission
     background: {fileID: -5829464770624988278, guid: 25a95bce95490ee4c81153f334234269, type: 3}
   - nodeName: Database
     background: {fileID: -9140666817895457056, guid: 0b45e1a3de1d44343a6f3dc054b358a2, type: 3}
+  - nodeName: Hideout_Guards
+    background: {fileID: -9140666817895457056, guid: 0b45e1a3de1d44343a6f3dc054b358a2, type: 3}
+  - nodeName: Hideout_LoneGuard
+    background: {fileID: -5829464770624988278, guid: 25a95bce95490ee4c81153f334234269, type: 3}
