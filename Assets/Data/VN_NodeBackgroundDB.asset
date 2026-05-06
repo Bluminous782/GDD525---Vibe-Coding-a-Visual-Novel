@@ -28,10 +28,14 @@ MonoBehaviour:
   - nodeName: Hideout_WideShot
     background: {fileID: -4382263810883811731, guid: 1a7ddf90e4f426441b3eaf2dd041a387, type: 3}
   - nodeName: second_mission
-    background: {fileID: -5829464770624988278, guid: 25a95bce95490ee4c81153f334234269, type: 3}
+    background: {fileID: -4129423119409633025, guid: 0d74a2b21aabcdc4e9cca036bb15ccf9, type: 3}
   - nodeName: Database
     background: {fileID: -9140666817895457056, guid: 0b45e1a3de1d44343a6f3dc054b358a2, type: 3}
   - nodeName: Hideout_Guards
-    background: {fileID: -9140666817895457056, guid: 0b45e1a3de1d44343a6f3dc054b358a2, type: 3}
+    background: {fileID: 8749951454875477722, guid: d91754edba0e318408b87e64e29f8341, type: 3}
   - nodeName: Hideout_LoneGuard
-    background: {fileID: -5829464770624988278, guid: 25a95bce95490ee4c81153f334234269, type: 3}
+    background: {fileID: 2054604727495809227, guid: 5af5cfb7dfa068e4b9b646f061c6cda4, type: 3}
+  - nodeName: first_mission
+    background: {fileID: 1955671847081836899, guid: d05ff020b89aa02408b831a403ccad3a, type: 3}
+  - nodeName: Entrance_Point
+    background: {fileID: -4361620468579562037, guid: e75d0517704834248a66fad5995f9922, type: 3}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GARD
   m_EditorClassIdentifier: 
   characterId: GARD
-  portraitSprite: {fileID: 8556516414057411208, guid: cb1b71969628db240ae67c779c106561, type: 3}
+  portraitSprite: {fileID: 2845399044879350799, guid: 4c438e0a07b2ef943ac622fdb536fa4b, type: 3}
   artworkFacesRight: 1
   defaultScreenRight: 1
