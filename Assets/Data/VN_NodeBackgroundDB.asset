@@ -39,3 +39,5 @@ MonoBehaviour:
     background: {fileID: 1955671847081836899, guid: d05ff020b89aa02408b831a403ccad3a, type: 3}
   - nodeName: Entrance_Point
     background: {fileID: -4361620468579562037, guid: e75d0517704834248a66fad5995f9922, type: 3}
+  - nodeName: Opening
+    background: {fileID: -7368494145699783652, guid: 34c828fc7060a1a48b990d291c403e9a, type: 3}
