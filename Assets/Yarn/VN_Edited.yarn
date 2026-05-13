@@ -3,6 +3,38 @@
 <<declare $trust = 0>>
 <<declare $knows_secret = false>>
 <<declare $ID = false>>
+<<declare $run_through = false>>
+
+<<jump Opening>>
+
+===
+title: Opening
+---
+
+The Year is 2122.
+
+All forms of media, science and technology are run by "The Huxley Corporation."
+
+People still fight for their release from the control of Basil Huxley.
+
+In 2110, The Huxley Corporation suffered from a major data leak.
+
+Rumours surfaced that within the data leak was evidence of Human Experimentation.
+
+12 Years Later, The Sons of Alethia hatch a plan to break into a forgotten Huxley Lab.
+
+Little did they know what they found was beyond what we thought we knew...
+
+<<jump Location>>
+
+
+===
+title: Location
+---
+
+Year = 2122 
+
+Location = Huxley Outpost 9
 
 <<jump Hideout_WideShot>>
 
@@ -21,13 +53,21 @@ title: Hideout_Guards
 ---
 Outside of the building stands some guards keeping watch, with two keeping lookout from the entrance.
 
-Milo: Ready to go Champ?
+Milo: There it is. Outpost 9 of the Huxley Labs!
 
-You: Yep. 
+You: Looks like no one's been here in years.
 
-Milo: Nice. 
+Milo: That's what they want you to think!
 
-Milo: It's go time.
+Milo: This place has been kept secret from the world ever since it was built.
+
+Milo: Rumoured to have the best security in all of mankind.
+
+Milo: You ready?
+
+You: Ah what the heck. Sure.
+
+Milo: It's go time baby.
 
 << jump Hideout_LoneGuard>>
 ===
@@ -40,7 +80,9 @@ You notice a lone guard standing on a different side of the pyramid in the direc
 You notice the ID card on his waist.
 
   -> Attack the guard
-      You sneak up on one of the guards, taking him out. 
+      You sneak up on one of the guards.
+      Guard: Mr Porter?
+      You grab the Guard by the neck, putting him to sleep.
       <<jump first_mission>>
       <<set $ID = true>>
   -> Avoid the guard
@@ -73,8 +115,15 @@ You leave through the clearing you found, you always were a bit of a coward.
 title: first_mission
 ---
 
+Milo: That face mask your using really seems to be doing the trick.
+
+You: Do we really have to use it though? I could just sneak in there myself.
+
+Milo: Trust me Arthur, you'll need Harold's Face for the next part of the mission.
+
 You spot the ID card on the wounded guard.
-The guard name reads "Harold Porter".
+
+The guard name reads "Benjamin Walker".
 
   -> Pick Up Card?
       You do not pick up the card.
@@ -92,11 +141,11 @@ The guard name reads "Harold Porter".
 title:second_mission
 ---
 
-You move past the wounded guard and head towards two more guards on another side.
+You move past the guard and head towards two more guards on another side.
 
 Kneeling down beside a tree, you look into your backpack, looking for what you should use top take out the guards.
 
-The objects you can use are; A rock, Fireworks, and a gun.
+The objects you can use are; A Rock, Fireworks, and a Gun.
 
 <<jump distraction>>
 
@@ -110,7 +159,24 @@ Which object do you use?
       You throw a rock in the direction of the guards. 
       They do notice the rock being thrown but take no notice of it.
       You: Fuck.
-      <<jump distraction>>
+      <<jump distraction_redo>>
+  -> Fireworks
+      You set off a firework to the right of the guards.
+      Smoke starts to rise from that direction.
+      The guards notice the smoke and head towards it, leaving the area.
+      <<jump entrance_point>>
+  -> Gun
+      You fire a gun into the air.
+      The guards start to head towards your location.
+      You quickly put the gun back in your hand and run off, slowly approaching the entrance to the facility.
+      <<jump entrance_point>>
+
+===
+title: distraction_redo
+---
+
+Which object do you use?
+
   -> Fireworks
       You set off a firework to the right of the guards.
       Smoke starts to rise from that direction.
@@ -170,7 +236,69 @@ The door opens up revealling a dark hallway.
 
 You enter.
 
-<<jump Enter>>
+<<jump Security_Wing>>
+
+===
+title: Security_Wing
+---
+
+As you enter the security wing, a voice echoes through the enclosed room.
+
+Voice: Welcome! Please allow us to scan you for your identity.
+
+A light scans from your face to your body.
+
+Voice: Identity Verified! Welcome Mr Porter. Have you got your ID on you?
+
+You: No, I uh...lost it in the garbage wing yesterday.
+
+Voice: Oh dear! How very silly of you! Allow me to create a new one.
+
+A machine whirrs in the background.
+
+<<jump Questionairre>>
+
+===
+title: Questionairre
+---
+
+Milo: Soooooo....Whilst that thing is working, I must tell you about a couple things about Huxley Corporation before you go in.
+
+Milo: Anything you want to know?
+
+    ->Who is Basil Huxley?
+        Milo: Basil founded The Huxley Corporation in 1976.
+        Milo: He was named the Architect of The Modern Age, supposedly.
+        You: So...He should be dead by now, right?
+        Milo: Exactly.
+        <<jump Questionairre>>
+    ->Why did they keep this place secret?
+        Milo: Well, The Huxley Corporation has a perfect image right?
+        You: Uh-Huh.
+        Milo: And Basil has to be this perfect leader.
+        You: Get to the point Milo.
+        Milo: Ok. Sorry.
+        Milo: Ex-Employees state that Huxley's conducting human experiments within the facility.
+        You: What the fuck. Seriously?
+        Milo: Yup! And that's why Huxley looks so good for being over 200 years old.
+        <<jump Questionairre>>
+    ->What will I find inside here?
+        Milo: First thing is GARD.
+        You: GARD?
+        Milo: Yup. Guided Autonomous Risk Detector.
+        Milo: Designed to Run and Protect the facility from people like us.
+        You: Lovely.
+        Milo: Lovely indeed.
+        <<jump Questionairre>>
+    ->Any updates from the base?
+        Milo: Not really. Huxley's followers still eat up anything the bastard says.
+        You: What about the leak. Still finding anything from it?
+        Milo: No. We've only just gotten into the first layer of the file.
+        You: Really?
+        Milo: Yeah, they've encrypted the fuck out of this thing.
+        <<jump Questionairre>>
+    -> No not really.
+        <<jump Enter>>
 
 ===
 title: Enter
@@ -183,11 +311,12 @@ A voice booms across the lab.
 
 GARD: Life Form detected please state your name and reasoning behind being here.
 
--> Tell the Truth
-    You: My name is Arthur Spencer, I'm here searching for my sister, the last known location on her phone tracked her heading towards here
+-> Rat Out Milo
+    You: My name is Arthur Spencer. I'm a member of The Son's of Athelia.
+    You: I'm not here for them. I'm not here for you. I'm here for my sister.
     GARD: Negative. You must be here on official business, please vacate the premisis immediately
-    <<jump Liar>>
--> Truth and a Lie
+    <<jump Truth_Seeker>>
+-> Pretend to be Harold.
     <<set $trust += 1>>
     You: My name is Harold Porter, joined here a week ago. Needed to collect belongings I forgot.
     GARD: Affirmative, allow me to check the database.
@@ -198,7 +327,7 @@ GARD: Life Form detected please state your name and reasoning behind being here.
     GARD: Welcome Mr Porter.
     <<jump OfficialBusiness>>
 ===
-title: Liar
+title: Truth_Seeker
 ---
 All lights in the basement start flashing a bright glaring light.
 The door you entered from slams shut.
@@ -206,8 +335,10 @@ You attempt to open through brute strength to no avail.
 
 GARD: ERROR! ERROR! ERROR! Unknown life-form has entered the facility. Activating self-defense protocols.
 
+Milo: FUCK! ARTHUR YOU SON OF A BITCH!
+
 -> Run! 
-    GARD: Please leave the facility. Please leave the facility.
+    GARD: PLEASE LEAVE THE FACILITY. PLEASE LEAVE THE FACILITY. PLEASE LEAVE THE FACILITY.
     
     You run down the facility, trying every door you possibly can. As you run, you reach the end of the corridoor.
     
@@ -233,10 +364,6 @@ A large computer sits at the end of the room.
 You approach it.
 
 GARD: Please wait here for a moment...
-
-You: Who are you anyway?
-
-GARD: I am GARD. A system designed to run and protect the facility.
 
 GARD processes the computer.
 
