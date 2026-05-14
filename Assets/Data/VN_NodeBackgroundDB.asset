@@ -41,3 +41,5 @@ MonoBehaviour:
     background: {fileID: -4361620468579562037, guid: e75d0517704834248a66fad5995f9922, type: 3}
   - nodeName: Opening
     background: {fileID: -7368494145699783652, guid: 34c828fc7060a1a48b990d291c403e9a, type: 3}
+  - nodeName: Security_Wing
+    background: {fileID: 7031564157739745916, guid: 98a2409dff40b274ea4152495ea154e2, type: 3}
