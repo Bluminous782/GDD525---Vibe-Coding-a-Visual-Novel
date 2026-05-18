@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f402f9b657feb04eb26cef0e1d0fd85, type: 3}
   m_Name: Milo
   m_EditorClassIdentifier: 
-  characterId: 
-  portraitSprite: {fileID: 0}
+  characterId: Milo
+  portraitSprite: {fileID: -5095911003462698541, guid: 97fcbe74f451ac5449440be2cd8dbbc3, type: 3}
   artworkFacesRight: 1
   defaultScreenRight: 1

@@ -15,4 +15,4 @@ MonoBehaviour:
   characterId: You
   portraitSprite: {fileID: -7441139868736287282, guid: 8374b42dcdeb43a44aa0a10529cc7b21, type: 3}
   artworkFacesRight: 1
-  defaultScreenRight: 1
+  defaultScreenRight: 0

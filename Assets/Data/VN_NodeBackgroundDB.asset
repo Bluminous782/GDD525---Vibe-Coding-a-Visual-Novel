@@ -24,7 +24,7 @@ MonoBehaviour:
   - nodeName: M9_Test_B
     background: {fileID: 21300000, guid: 9736433534caffc40b1761b1b270323c, type: 3}
   - nodeName: Enter
-    background: {fileID: -6557791721017747862, guid: 23cd1b183e812d54bb143313f56fb791, type: 3}
+    background: {fileID: -7683361320886261479, guid: 95aba9e32ed1ce14f9e8d047748890f7, type: 3}
   - nodeName: Hideout_WideShot
     background: {fileID: -4382263810883811731, guid: 1a7ddf90e4f426441b3eaf2dd041a387, type: 3}
   - nodeName: second_mission
@@ -43,3 +43,9 @@ MonoBehaviour:
     background: {fileID: -7368494145699783652, guid: 34c828fc7060a1a48b990d291c403e9a, type: 3}
   - nodeName: Security_Wing
     background: {fileID: 7031564157739745916, guid: 98a2409dff40b274ea4152495ea154e2, type: 3}
+  - nodeName: OfficialBusiness
+    background: {fileID: -1272677867225930765, guid: 33d323ac70873624481ade79758ec775, type: 3}
+  - nodeName: Bridge
+    background: {fileID: -5951331416548801110, guid: db265e15c6b8e0b4eb734ec11428af45, type: 3}
+  - nodeName: Truth_Seeker
+    background: {fileID: 1014207866013734801, guid: 9771b48e8f296c440bbdb28a35aefcf7, type: 3}
