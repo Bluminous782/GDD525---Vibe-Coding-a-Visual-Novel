@@ -317,15 +317,15 @@ GARD: Please state your name and reasoning behind being here.
     You: I'm not here for them. I'm not here for you. I'm here for my sister.
     GARD: Negative. You must be here on official business, please vacate the premisis immediately
     <<jump Truth_Seeker>>
--> Faulty Impersonation
+-> New Recruit
     <<set $trust += 1>>
-    You: Harold Porter, joined here a week ago, need to collect some belongings I forgot.
+    You: Benjamin Walker, joined here a week ago, need to collect some belongings I forgot.
     Milo: Fucking Moron.
-    Milo: Porter's been here for over a decade.
+    Milo: Your Porter, not Walker.
     GARD scans your body, an illuminating light scanning your body.
-    GARD: Harold Porter has been an employee for 12 Years. Allow me to check the database.
+    GARD: Face Scan identifies you as Harold Porter. Allow me to resolve this conflict.
     <<jump Database>>
--> Perfect Impersonation
+-> Veteran
     <<set $trust += 1>>
     You: Harold Porter, here on official business.
     GARD: Welcome Mr Porter.
